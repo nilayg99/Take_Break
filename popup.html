@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Take a Break</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { padding: 10px; }
+    .field { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Take a Break Settings</h2>
+    <div class="field">
+      <label for="interval">Interval (minutes):</label>
+      <input type="number" id="interval" min="1">
+    </div>
+    <div class="field">
+      <label for="breakDuration">Break Duration (seconds):</label>
+      <input type="number" id="breakDuration" min="1">
+    </div>
+    <div class="field">
+      <label for="toggle">Enable Break Reminders:</label>
+      <input type="checkbox" id="toggle">
+    </div>
+    <button id="saveButton">Save</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
